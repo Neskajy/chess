@@ -1,0 +1,67 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.desk {
+  height: 80%;
+  aspect-ratio: 1/1;
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(8, 1fr);
+  position: relative;
+}
+.desk .fields .field {
+  aspect-ratio: 1/1;
+  position: relative;
+  width: 100%;
+}
+.desk .fields .field p {
+  position: absolute;
+  font-size: 1.3em;
+  font-weight: 700;
+}
+.desk .fields .field .number {
+  left: 5%;
+}
+.desk .fields .field img {
+  height: 75px;
+  position: absolute;
+  left: 50%;
+  bottom: 5%;
+  transform: translateX(-50%);
+  cursor: pointer;
+}
+.desk .fields .field .symbol {
+  position: absolute;
+  bottom: 5%;
+  left: 5%;
+}
+.desk .fields .field .available_move {
+  position: absolute;
+  z-index: 999;
+  width: 50%;
+  aspect-ratio: 1/1;
+  background: red;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  border-radius: 50%;
+  cursor: pointer;
+}
+.desk .fields .field .available_move:hover {
+  transition: 0.6s ease all;
+  background: rgb(255, 34, 0);
+  transition: 0.6s ease all;
+}/*# sourceMappingURL=style.css.map */
